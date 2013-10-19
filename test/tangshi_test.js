@@ -24,13 +24,16 @@ var tangshi = require('../lib/tangshi.js');
 
 exports['tangshi'] = {
   setUp: function(done) {
-    // setup here
+    //var json = require('../json/tangshi.json');
     done();
   },
   'no args': function(test) {
-    test.expect(1);
     // tests here
-    test.equal(tangshi.awesome(), 'awesome', 'should be awesome.');
+    test.notEqual(tangshi.getPoetryByAuthor('李白'), 0, 'should not be 0.');
+    test.notEqual(tangshi.getPoetryByTitle('静夜思'), 0, 'should not be 0.');
+    test.notEqual(tangshi.getPoetryBySearchTitle('静夜思'), 0, 'should not be 0.');
+    test.notEqual(tangshi.getPoetryBySearchContent('白日依山尽'), 0, 'should not be 0.');
+    test.notEqual(tangshi.getPoetryByTitleAndAuthor('静夜思', '李白'), 0, 'should not be 0.');
     test.done();
   }
 };

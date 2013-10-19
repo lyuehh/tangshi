@@ -1,7 +1,7 @@
 {
   "name": "tangshi",
   "version": "0.0.0",
-  "main": "lib/tangshi.js",
+  "main": "index.js",
   "description": "tangshi",
   "homepage": "https://github.com/lyuehh/tangshi",
   "bugs": "https://github.com/lyuehh/tangshi/issues",
@@ -14,11 +14,18 @@
     "type": "git",
     "url": "https://github.com/lyuehh/tangshi"
   },
+  "bin": {
+    "tangshi": "./bin/tangshi"
+  },
   "licenses": [
     {
       "type": "MIT"
     }
   ],
+  "dependencies": {
+    "underscore": "*",
+    "commander": "*"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-nodeunit": "~0.2.0",
