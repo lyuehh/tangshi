@@ -22,6 +22,9 @@
       "type": "MIT"
     }
   ],
+  "scripts": {
+    "test": "grunt"
+  },
   "dependencies": {
     "underscore": "*",
     "commander": "*"
