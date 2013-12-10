@@ -7,7 +7,7 @@ install
 =======
 `npm install -g tangshi`
 
-usage
+Usage
 =====
 
 ```
@@ -25,7 +25,7 @@ Usage: tangshi [options]
     --poetries               list all the poetries
 ```
 
-example
+Example
 =======
 `$ tangshi -t 静夜思`
 
